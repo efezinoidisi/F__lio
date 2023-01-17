@@ -1,17 +1,20 @@
 import styles from "./style.module.css";
 import { TfiMenu, TfiClose } from "react-icons/tfi";
+import { useTheme } from "../../context";
 
 const Mobile = ({ showModal, setShowModal }) => {
 	const toggleModal = () => {
 		setShowModal((prev) => !prev);
 	};
+	
+	const darkTheme = useTheme()
 
 	return (
 		<div className={styles.nav_mobile}>
 			{showModal ? (
 				<TfiClose onClick={toggleModal} />
 			) : (
-				<TfiMenu style={{ color: "#110111" }} onClick={toggleModal} />
+				<TfiMenu style={darkTheme?{color:"#fff"}:{ color: "#fff" }} onClick={toggleModal} />
 			)}
 			{showModal && (
 				<nav className={styles.nav_mobile_links}>
