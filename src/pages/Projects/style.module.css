@@ -1,0 +1,106 @@
+.container {
+    color: #fff;
+    width: 100%;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+    height: 100%;
+    text-align: left;
+    padding:6rem 1rem 2rem;
+}
+
+.container_light {
+    color: black;
+    width: 100%;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255,1));
+    height: 100%;
+    text-align: left;
+    padding: 1rem;
+    margin: 3rem 0 0;
+}
+
+
+.container .heading {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.container_light .heading {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+
+.container p {
+    padding: 0 1.5rem;
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    opacity: 0.8;
+    bottom: 0;
+    background-color: purple;
+    height: .5rem;
+    left: 20%;
+    right: -10%;
+}
+
+@media screen and (min-width:600px) {
+    .container {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .container {
+        position: relative;
+        width: 85%;
+        margin-left: 15%;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 3rem 0;
+    }
+
+    .container_light {
+        position: relative;
+        width: 85%;
+        margin-left: 15%;
+        height: max-content;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 3rem 0;
+    }
+    .container .heading, .container_light .heading{
+        margin-bottom: 3rem;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+    .container{
+        padding: 6rem 9rem 0;
+    }
+    
+        .container_light {
+            padding: 6rem 9rem 0;
+        }
+}

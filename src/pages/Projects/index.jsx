@@ -1,14 +1,17 @@
 import styles from "./style.module.css";
 import projects from "./data";
 import Card from "../../components/Card/Index";
+import { useTheme } from "../../context";
 const index = () => {
 	const projectsCard = projects.map((project) => (
 		<Card key={project.id} {...project} />
 	));
+	
+	const darkTheme = useTheme()
 
 	return (
-		<div>
-			<h1>My projects</h1>
+		<div className={darkTheme?styles.container:styles.container_light}>
+			<h2 className={styles.heading}>My projects</h2>
 			{projectsCard}
 		</div>
 	);

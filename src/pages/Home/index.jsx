@@ -1,22 +1,24 @@
-import Navbar from "../../components/Navbar";
-import Hero from "../Hero/index";
-import Contact from "../Contact/index";
-import About from "../About/index";
-import Sidebar from "../../components/Sidebar/index";
+import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import styles from "./style.module.css";
-import Projects from "../Projects/index"
-
+import { useTheme, useToggle } from "../../context";
 const index = () => {
-	
+	const darkTheme = useTheme();
+	const toggle = useToggle();
 
 	return (
-		<div>
-			<Navbar />
-			<Sidebar />
-			<Hero />
-      <About />
-      <Projects/>
-			<Contact />
+		<div
+			onClick={toggle}
+			className={darkTheme ? styles.toggle : styles.toggle_light}
+		>
+			{darkTheme ? (
+				<BsFillSunFill
+					className={darkTheme ? styles.darkmode : styles.lightmode}
+				/>
+			) : (
+				<BsFillMoonFill
+					className={darkTheme ? styles.darkmode : styles.lightmode}
+				/>
+			)}
 		</div>
 	);
 };

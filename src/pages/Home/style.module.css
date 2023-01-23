@@ -1,0 +1,48 @@
+.toggle {
+    position: fixed;
+    border-radius: 5px;
+    text-align: left;
+    transition: .3s;
+    cursor: pointer;
+    bottom:2% ;
+    right: 5%;
+    transition: ease-in .3s;
+}
+
+.toggle_light {
+    position: fixed;
+        border-radius: 5px;
+        text-align: left;
+        transition: .3s;
+        cursor: pointer;
+        bottom: 2%;
+        right: 5%;
+        transition: ease-in .3s;
+}
+
+.lightmode {
+    color: #000;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.lightmode:hover {
+    opacity: 0.7;
+}
+
+.darkmode {
+    color: #fff;
+    font-size: 2rem;
+}
+
+
+
+@media screen and (min-width:900px) {
+    .toggle{
+        display: none;
+    }
+    
+        .toggle_light {
+            display: none;
+        }
+}

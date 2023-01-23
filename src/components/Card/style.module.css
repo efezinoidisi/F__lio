@@ -1,0 +1,195 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 3px 2px rgba(102, 3, 102, 0.7);
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container_light {
+    background-color: rgba(253, 250, 254, 0.9);
+    box-shadow: 5px 5px 2px rgba(102, 3, 102, 0.7);
+    margin-bottom: 3rem;
+    padding: 3rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.heading {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+
+.heading::after {
+    content: "";
+    position: absolute;
+    background-color: purple;
+    height: .3rem;
+    bottom: 0;
+    left: 20%;
+    right: 10%;
+}
+
+.heading:hover::after {
+    transition: ease-out .3s;
+    left: 0;
+    right: 0;
+}
+
+.image_wrap {
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.container_light .image {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.links a {
+    color: white;
+    font-size: 1.2rem;
+    border: 1px solid purple;
+    padding: .4rem 2rem;
+    border-radius: 10px;
+    transition: ease-out .3s;
+}
+
+.container_light .links a {
+    color: #000;
+}
+
+.links a:hover {
+
+    opacity: 0.7;
+    background-color: rgb(56, 3, 56);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+@media screen and (min-width:900px) {
+    
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px rgba(102, 3, 102, 0.7);
+    margin-bottom: 3rem;
+    padding: 3rem;
+    border-radius: 10px;
+    flex-direction: row;
+    gap: 2rem;
+    border-top: 0.1px solid rgba(128, 0, 128, 0.3);
+        border-left: 0.1px solid rgba(128, 0, 128, 0.3);
+}
+
+.container_light {
+    background-color: rgba(253, 250, 254, 0.9);
+    box-shadow: 5px 5px 2px rgba(102, 3, 102, 0.7);
+    margin-bottom: 3rem;
+    flex-direction: row;
+    padding: 3rem;
+    border-radius: 10px;
+    gap: 2rem;
+    border-top: 0.1px solid rgba(128, 0, 128, 0.3);
+    border-left: 0.1px solid rgba(128, 0, 128, 0.3);
+}
+
+.heading {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+
+.heading::after {
+    content: "";
+    position: absolute;
+    background-color: purple;
+    height: .3rem;
+    bottom: 0;
+    left: 20%;
+    right: 10%;
+}
+
+.heading:hover::after {
+    transition: ease-out .3s;
+    left: 0;
+    right: 0;
+}
+
+.image_wrap {
+    width: 60%;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.container_light .image{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.links a {
+    color: white;
+    font-size: 1.2rem;
+    border: 1px solid purple;
+    padding: .4rem 2rem;
+    border-radius: 10px;
+    transition: ease-out .3s;
+}
+
+.container_light .links a {
+    color: #000;
+}
+
+.links a:hover {
+
+    opacity: 0.7;
+    background-color: rgb(56, 3, 56);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+}
