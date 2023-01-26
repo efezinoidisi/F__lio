@@ -122,7 +122,7 @@ li {
     bottom: 0;
     left: 10%;
     right: 30%;
-    border:1px solid #fff;
+    border: 1px solid #fff;
     animation-name: floating;
     animation-duration: .5s;
     animation-iteration-count: 1;
@@ -185,7 +185,7 @@ li {
         align-items: flex-start;
         top: 0;
         left: 0;
-        width: 17%;
+        width: 15%;
         z-index: 5;
         height: 100%;
         border-right: 1px solid black;

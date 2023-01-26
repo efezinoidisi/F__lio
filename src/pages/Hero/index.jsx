@@ -9,14 +9,20 @@ const index = () => {
 	return (
 		<div className={darkTheme ? styles.container : styles.container_light}>
 			<div className={styles.content}>
-				<h1 className={darkTheme ? styles.heading : styles.heading_light}>
-					Hello! 👋
+				<h1 className={styles.heading}>
+					Hello! 👋, I'm <span> Efezino</span>.
 				</h1>
-				<p className={darkTheme ? styles.paragraph : styles.paragraph_light}>
-					<span> I'm Efezino</span>,
-					<br /> a junior frontend developer with a passion for bringing amazing
+				<p className={styles.paragraph}>
+					a junior frontend developer with a passion for bringing amazing
 					designs to life
 				</p>
+			</div>
+
+			<div className={darkTheme ? styles.fav_quote : styles.fav_quote_light}>
+				<h5>Favourite quote </h5>
+				<blockquote>
+					“know yourself and you will win all battles” ― Sun Tzu, The Art of War
+				</blockquote>
 			</div>
 		</div>
 	);
