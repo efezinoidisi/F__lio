@@ -4,7 +4,7 @@ import { FaGithub, FaTwitter } from "react-icons/fa";
 import { TfiMenu, TfiClose } from "react-icons/tfi";
 import { useTheme, useToggle } from "../../context";
 
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom"
 
 const Mobile = ({ showModal, setShowModal }) => {
 	const toggleModal = () => {
@@ -28,7 +28,9 @@ const Mobile = ({ showModal, setShowModal }) => {
 				/>
 			)}
 			{showModal && (
-				<nav className={styles.nav_mobile_links}>
+				<nav
+					className={darkTheme ? styles.nav_mobile_links : styles.nav_mobile_links_light}
+				>
 					<ul>
 						<li onClick={toggleModal}>
 							<Link to={"/"}> Home</Link>

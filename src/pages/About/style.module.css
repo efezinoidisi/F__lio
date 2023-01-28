@@ -32,7 +32,6 @@
 
 .container_light::before {
     content: "";
-    background-color: inherit;
     position: absolute;
     top: 10vh;
     left: 0;
@@ -46,7 +45,6 @@
 
 .container_light::after {
     content: "";
-    background-color: inherit;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -59,7 +57,6 @@
 
 .container::before {
     content: "";
-    background-color: inherit;
     position: absolute;
     top: 10vh;
     left: 0;

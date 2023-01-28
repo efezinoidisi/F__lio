@@ -1,4 +1,5 @@
 .container {
+    position: relative;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
         url("../../assets/women-web-developer-with-laptop.png");
     width: 100%;
@@ -11,7 +12,7 @@
     flex-direction: column;
     padding: 30% 1rem 6.5rem;
     justify-content: space-between;
-    position: relative;
+    
 }
 
 .container_light {
@@ -35,7 +36,6 @@
 
 .container_light::before {
     content: "";
-    background-color: inherit;
     position: absolute;
     top: 10%;
     left: 0;
@@ -62,7 +62,6 @@
 
 .container::before {
     content: "";
-    background-color: inherit;
     position: absolute;
     top: 10%;
     left: 0;
@@ -205,7 +204,6 @@
 
     .container::before {
         content: "";
-        background-color: inherit;
         position: absolute;
         top: 0;
         left: 0;
@@ -219,7 +217,6 @@
 
     .container::after {
         content: "";
-        background-color: inherit;
         position: absolute;
         bottom: 0;
         right: 0;
