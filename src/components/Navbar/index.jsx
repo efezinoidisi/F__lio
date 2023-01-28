@@ -4,7 +4,7 @@ import Desktop from "./Desktop";
 import styles from "./style.module.css";
 import { useTheme } from "../../context";
 import { Link } from "react-router-dom";
-import Sidebar from "../Sidebar/Index";
+import Sidebar from "../Sidebar/Sidebar";
 
 const Navbar = () => {
 	const [showModal, setShowModal] = useState(false);
