@@ -16,7 +16,7 @@
 .container {
     position: fixed;
     z-index: 5;
-    background-color: black;
+    background-color: hwb(0 0% 100%);
     width: 100%;
     border-bottom: 1px solid purple;
     display: flex;
@@ -52,20 +52,29 @@
 
 }
 
-.nav_mobile_links ul {
+.nav_mobile_links_light {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+}
+
+.nav_mobile_links ul, .nav_mobile_links_light ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 30%;
     width: 80%;
-    border: 1px soolid red;
 }
-
-li {
-    list-style-type: none;
-}
-
 
 .socials {
 
@@ -81,7 +90,7 @@ li {
 }
 
 .socials_l {
-    color: #fff;
+    color: #000;
 
 }
 
@@ -112,7 +121,7 @@ li {
 
 
 .container_light a {
-    color: #fff;
+    color: #110111;
     text-decoration: none;
     transition: ease-out .2s;
     position: relative;
