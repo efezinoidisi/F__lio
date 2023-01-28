@@ -45,14 +45,17 @@ const index = () => {
 		<Input key={item.id} handleChange={handleChange} {...item} />
 	));
 
-	//action="https://getform.io/f/d557671d-44a1-425c-9c37-ff375d9768ef"
-	//method = "POST";
+
 	return (
 		<div className={darkTheme ? styles.container : styles.container_light}>
 			<h2>Contact me</h2>
 
 			<div className={styles.wrapper}>
-				<form className={styles.form}>
+				<form
+					action="https://getform.io/f/d557671d-44a1-425c-9c37-ff375d9768ef"
+					method="POST"
+					className={styles.form}
+				>
 					{first_part}
 
 					<div>
