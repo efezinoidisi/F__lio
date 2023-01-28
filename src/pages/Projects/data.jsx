@@ -25,7 +25,7 @@ const projects = [
 	{
 		id: 3,
 		name: "Apply for me",
-		details: "This was a team project where we collaboated ",
+		details: "Make job applications ",
 		img: apply,
 		github: "https://github.com/workshopapps/applyforme.web",
 		live: "https://applyforme.app",

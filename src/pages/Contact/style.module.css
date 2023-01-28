@@ -1,32 +1,83 @@
 .container {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-        url("../../assets/women-web-developer-with-laptop.png");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
     width: 100%;
     height: 100%;
-    background-position: center;
-    background-attachment: fixed;
     color: #fff;
-padding-top: 7rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-
+    padding: 30% 1rem 3rem;
 }
 
-.container h2 {
+
+.container::before {
+    content: "";
+    background-color: inherit;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-top: 0.5rem solid;
+    border-left: 0.5rem solid;
+    border-image: linear-gradient(45deg, black, purple, teal) 1;
+}
+
+
+.container::after {
+    content: "";
+    background-color: inherit;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-bottom: 0.5rem solid;
+    border-right: 0.5rem solid;
+    border-image: linear-gradient(45deg, teal, orange) 1;
+}
+
+.container_light {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    padding: 30% 1rem 3rem;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+}
+
+
+.container_light::before {
+    content: "";
+    background-color: inherit;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-top: 0.5rem solid;
+    border-left: 0.5rem solid;
+    border-image: linear-gradient(45deg, black, purple, teal) 1;
+}
+
+
+.container_light::after {
+    content: "";
+    background-color: inherit;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-bottom: 0.5rem solid;
+    border-right: 0.5rem solid;
+    border-image: linear-gradient(45deg, teal, orange) 1;
+}
+
+.container h2,
+.container_light h2 {
     padding: 0 0.5rem;
     position: relative;
     width: max-content;
 }
 
-.container h2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 30%;
-    height: 3px;
-    background-color: aquamarine;
-}
 
 .container h2::after {
     content: "";
@@ -34,8 +85,21 @@ padding-top: 7rem;
     bottom: 10%;
     left: 30%;
     right: 0;
-    height: 3px;
-    background-color: aquamarine;
+    height: 5px;
+    background-color: purple;
+}
+
+
+
+
+.container_light h2::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    right: 0;
+    height: 5px;
+    background-color: purple;
 }
 
 .wrapper {
@@ -51,6 +115,7 @@ padding-top: 7rem;
     justify-content: center;
     align-items: center;
     padding: 0 0.5rem 2rem;
+    line-height: 1.9;
 }
 
 .form {
@@ -63,7 +128,7 @@ padding-top: 7rem;
     padding: 0.5rem 0;
 }
 
-.form input {
+.container .form input {
     width: 100%;
     padding: 0.7rem;
     border-radius: 10px;
@@ -73,12 +138,27 @@ padding-top: 7rem;
     color: white;
 }
 
-.form input::placeholder {
-    color: rgba(0, 255, 255, 0.7);
+.container_light .form input {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    color: #000;
+}
+
+.container .form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
     opacity: .8;
 }
 
-.form textarea {
+.container_light .form input::placeholder {
+    color: rgba(0, 0, 0, 0.8);
+    opacity: .8;
+}
+
+.container .form textarea {
     width: 100%;
     padding: 0.7rem;
     border-radius: 10px;
@@ -88,48 +168,147 @@ padding-top: 7rem;
     color: white;
 }
 
-.container_light {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-        url("../../assets/women-web-developer-with-laptop.png");
-    width: 100%;
-    height: 90vh;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: .3s;
 
+.container_light .form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    color: #000;
 }
+
 
 .btn_wrap {
     text-align: center;
     margin-top: 2rem;
 }
 
-.form button {
-    width: 40%;
+.container .form button {
+    width: 60%;
     border-radius: 10px;
     outline: none;
-    border: none;
-    background-color: rgba(0, 255, 255, 0.7);
+    background-color: inherit;
+    border: 1px solid rgba(0, 255, 255, 0.7);
     padding: 0.7rem;
-    color: black;
+    color: rgba(0, 255, 255, 0.7);
     font-weight: 600;
     font-size: 1.2rem;
     cursor: pointer;
 
 }
 
+.container_light .form button {
+    width: 60%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: purple;
+    padding: 0.7rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+
+@media screen and (min-width:600px) {
+    .container {
+        height: 100vh;
+    }
+
+    .container_light {
+        height: 100vh;
+    }
+}
+
 @media screen and (min-width:900px) {
+
     .container {
         position: relative;
-
         width: 85%;
-        height: 100vh;
         margin-left: 15%;
+        height: 100vh;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3rem;
+    }
+
+    .container::before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        border-top: 0.5rem solid;
+        border-left: 0.5rem solid;
+        border-image: linear-gradient(45deg, teal, orange) 1;
+    }
+
+
+    .container::after {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        border-bottom: 0.5rem solid;
+        border-right: 0.5rem solid;
+        border-image: linear-gradient(45deg, teal, orange) 1;
+    }
+
+
+    .container_light {
+        position: relative;
+        width: 85%;
+        margin-left: 15%;
+        height: 100vh;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3rem;
+    }
+
+    .container_light::before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        border-top: 0.5rem solid;
+        border-left: 0.5rem solid;
+        border-image: linear-gradient(45deg, teal, orange) 1;
+    }
+
+
+    .container_light::after {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        border-bottom: 0.5rem solid;
+        border-right: 0.5rem solid;
+        border-image: linear-gradient(45deg, teal, orange) 1;
     }
 
     .wrapper {

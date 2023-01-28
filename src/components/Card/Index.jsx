@@ -1,5 +1,3 @@
-
-
 import styles from "./style.module.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { useTheme } from "../../context";

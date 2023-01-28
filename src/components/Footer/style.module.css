@@ -1,0 +1,26 @@
+.container{
+    position: absolute;
+    bottom: 2%;
+    right: 3.5%;
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+.container_light {
+    position: absolute;
+    bottom: 2%;
+    right: 3.5%;
+    font-size: 0.7rem;
+    color: #000;
+}
+
+
+@media screen and (min-width:900px) {
+    .container{
+        right: 1.5%;
+    }
+    
+        .container_light {
+            right: 1.5%;
+        }
+}

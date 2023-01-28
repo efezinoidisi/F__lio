@@ -7,6 +7,7 @@ import Contact from "./pages/Contact/Index";
 import Hero from "./pages/Hero/Index";
 import Navbar from "./components/Navbar/Index";
 import Work from "./pages/Projects/Index";
+import Footer from "./components/Footer/Index"
 
 	
 
@@ -31,7 +32,8 @@ function App() {
 					<Route path="/projects" element={<Work />} />
 					<Route path="*" element={<Error />} />
 				</Routes>
-				<Home/>
+				<Home />
+				<Footer/>
 			</ThemeProvider>
 		</div>
 	);

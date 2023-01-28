@@ -1,12 +1,16 @@
 import { useState } from "react";
 import Input from "../../components/Input/Index";
 import styles from "./style.module.css";
+import { useTheme } from "../../context";
+
 
 const index = () => {
+	
+	const darkTheme = useTheme();
 	const [values, setValues] = useState({
 		fullname: "",
 		email: "",
-		message: "Hello, I would love to ...",
+		message: "",
 	});
 	const data = [
 		{
@@ -41,7 +45,7 @@ const index = () => {
 	//action="https://getform.io/f/d557671d-44a1-425c-9c37-ff375d9768ef"
 	//method = "POST";
 	return (
-		<div className={styles.container}>
+		<div className={darkTheme?styles.container:styles.container_light}>
 			<h2>Contact me</h2>
 
 			<div className={styles.wrapper}>
@@ -57,6 +61,7 @@ const index = () => {
 							rows="10"
 							value={values.message}
 							onChange={handleChange}
+							placeholder={"Hello, I would love to ..."}
 						></textarea>
 					</div>
 
@@ -67,8 +72,16 @@ const index = () => {
 
 				<div className={styles.aside}>
 					<p>
-						Do you have any questions or would love to collaborate, Kindly send me a message and I would get back to you.
+						Do you have any questions or just want to chat, Kindly send
+						me a message and I would get back to you.
 					</p>
+					
+					
+					<div className={styles.details}>
+						<p>Location: Delta, Nigeria</p>
+						<p>Phone: 07086438574</p>
+						<p>email: efezinoeidisi@gmail.com</p>
+					</div>
 				</div>
 			</div>
 		</div>

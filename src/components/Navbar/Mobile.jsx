@@ -2,7 +2,9 @@ import styles from "./style.module.css";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 
 import { TfiMenu, TfiClose } from "react-icons/tfi";
-import { useTheme ,useToggle} from "../../context";
+import { useTheme, useToggle } from "../../context";
+
+import { Link } from "react-router-dom";
 
 const Mobile = ({ showModal, setShowModal }) => {
 	const toggleModal = () => {
@@ -18,7 +20,6 @@ const Mobile = ({ showModal, setShowModal }) => {
 				<TfiClose
 					style={darkTheme ? { color: "#fff" } : { color: "#fff" }}
 					onClick={toggleModal}
-		
 				/>
 			) : (
 				<TfiMenu
@@ -30,20 +31,22 @@ const Mobile = ({ showModal, setShowModal }) => {
 				<nav className={styles.nav_mobile_links}>
 					<ul>
 						<li onClick={toggleModal}>
-							<a href="/about">About Me</a>
+							<Link to={"/"}> Home</Link>
+						</li>
+						<li onClick={toggleModal}>
+							<Link to={"/about"}> About Me</Link>
 						</li>
 
 						<li onClick={toggleModal}>
-							<a href="/projects">Projects</a>
+							<Link to={"/projects"}> Projects</Link>
 						</li>
 
 						<li onClick={toggleModal}>
-							<a href="/contact">Contact Me</a>
+							<Link to={"/contact"}> Contact Me</Link>
 						</li>
 					</ul>
 
 					<div className={styles.sidebar}>
-						
 						<div className={styles.socials}>
 							<a href="/">
 								<FaGithub

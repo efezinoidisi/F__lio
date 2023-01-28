@@ -4,10 +4,13 @@
     align-items: center;
     background-color: rgb(117, 12, 117);
     color: #fff;
-    height: 10vh;
-    padding: 0 3rem;
-    position: relative;
-
+    height: 10%;
+    padding: 0 1rem;
+    position: fixed;
+    border-bottom: 1px solid rgba(0, 0, 0,0.4);
+    z-index: 5;
+    width: 100%;
+    top: 0;
 }
 
 .container {
@@ -21,7 +24,7 @@
     align-items: center;
     padding: 0 1rem;
     height: 10%;
-
+    top: 0;
 }
 
 .nav_mobile {
@@ -89,6 +92,7 @@ li {
     transition: ease-in .2s;
     width: fit-content;
 }
+
 
 
 .container a:hover::after {
@@ -168,7 +172,7 @@ li {
         align-items: flex-start;
         top: 0;
         left: 0;
-        width: 17%;
+        width: 15%;
         z-index: 5;
         background-color: black;
         height: 100%;
