@@ -1,0 +1,132 @@
+.container {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+    height: 100%;
+    padding: 30% 1rem 2rem;
+}
+
+.container_light {
+    position: relative;
+    color: black;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    padding: 30% 1rem 2rem;
+}
+
+.container::after {
+    content: "";
+    background-color: inherit;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-bottom: 0.5rem solid;
+    border-right: 0.5rem solid;
+    border-image: linear-gradient(45deg, teal, orange) 1;
+}
+
+.container_light::after {
+    content: "";
+    background-color: inherit;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-bottom: 0.5rem solid;
+    border-right: 0.5rem solid;
+    border-image: linear-gradient(45deg, teal, orange) 1;
+}
+
+.container .heading {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 2rem;
+    color: #fff;
+    line-height: 1.8;
+        letter-spacing: 1.5px;
+}
+
+.container_light .heading {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 2rem;
+    color: black;
+    line-height: 1.8;
+        letter-spacing: 1.5px;
+}
+
+/* 
+.container p {
+    padding: 0 1.5rem;
+} */
+
+.heading::after {
+    content: "";
+    position: absolute;
+    opacity: 0.8;
+    bottom: 0;
+    background-color: purple;
+    height: .5rem;
+    left: 20%;
+    right: -10%;
+}
+
+@media screen and (min-width:600px) {
+    .container {
+        height: max-content;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .container {
+        position: relative;
+        width: 85%;
+        margin-left: 15%;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 3rem 0;
+    }
+
+    .container_light {
+        position: relative;
+        width: 85%;
+        margin-left: 15%;
+        height: max-content;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 3rem 0;
+    }
+
+    .container .heading,
+    .container_light .heading {
+        margin-bottom: 3rem;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        padding: 6rem 9rem 0;
+    }
+
+    .container_light {
+        padding: 6rem 9rem 0;
+    }
+}

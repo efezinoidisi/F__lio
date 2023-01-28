@@ -1,0 +1,81 @@
+.toggle {
+    position: fixed;
+    border-radius: 5px;
+    text-align: left;
+    transition: .3s;
+    cursor: pointer;
+    bottom:6% ;
+    right: 5%;
+    transition: ease-in .3s;
+    animation-name: spin;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+}
+
+.toggle_light {
+    position: fixed;
+        border-radius: 5px;
+        text-align: left;
+        transition: .3s;
+        cursor: pointer;
+        bottom: 6%;
+        right: 5%;
+        transition: ease-in .3s;
+        animation-name: spin;
+            animation-duration: 5000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+}
+
+.lightmode {
+    color: #000;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.lightmode:hover {
+    opacity: 0.7;
+}
+
+.darkmode {
+    color: #fff;
+    font-size: 2rem;
+}
+
+
+@media screen and (min-width:600px) {
+    .darkmode,.lightmode {
+        font-size: 4rem;
+    }
+}
+
+
+
+@media screen and (min-width:900px) {
+    .toggle{
+        display: none;
+    }
+    
+        .toggle_light {
+            display: none;
+        }
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    25%{
+        transform: rotate(90deg);
+    }
+    
+    75%{
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

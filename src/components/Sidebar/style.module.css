@@ -1,68 +1,72 @@
-.container{
-    position: fixed;
-        top: 50%;
-        right: 0;
-        bottom: 50%;
+.container {
+    display: none;
 }
 
-.socials {
-   
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 0;
-    border: 1px solid black;
-}
 
-.toggle {
-    margin-top: 2px;
-    width: 30px;
-    min-height: 20px;
-    background-color: rgba(17, 1, 17,0.4);
-    position: relative;
-    border-radius: 5px;
-    text-align: left;
-    transition: .3s;
-}
-/* 
-.toggle::before {
-    content: "";
-    background-color: red;
-    top: 20%;
-    left: 10%;
-    right: 30%;
-    bottom: 20%;
-    border-radius: 50%;
-    position: absolute;
-    transition: .3s;
-    z-index: 2;
-    border: 1px solid red;
-} */
+@media screen and (min-width:900px) {
+    .container {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+    }
 
-/* .toggle::after {
-    content: "";
-    background-color: #fff;
-    top: 20%;
-    left: 30%;
-    right: 10%;
-    bottom: 20%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1;
+    .lightmode {
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+    }
 
-} */
+    .lightmode:hover {
+        opacity: 0.7;
+    }
 
-.toggle_light {
-    margin-top: 2px;
-    width: 30px;
-    min-height: 20px;
-    background-color: rgba(17, 1, 17, 0.4);
-    position: relative;
-    border-radius: 5px;
-    text-align: right;
+    .darkmode {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .socials {
+
+        display: flex;
+        font-size: 2rem;
+        gap: 1rem;
+        
+    }
+    
+    .socials_d{
+        color: #fff;
+        opacity: 0.7;
+    }
+    
+    .socials_l{
+        color: #fff;
+        
+    }
+
+    .toggle {
+        margin-top: 2px;
+        width: 30px;
+        min-height: 20px;
+        position: relative;
+        border-radius: 5px;
+        text-align: left;
         transition: .3s;
-}
+        cursor: pointer;
+    }
 
-/* .toggle_light::before {
+
+    .toggle_light {
+        margin-top: 2px;
+        width: 30px;
+        min-height: 20px;
+        position: relative;
+        border-radius: 5px;
+        text-align: right;
+        transition: ease-in-out .3s;
+        cursor: pointer;
+    }
+
+    /* .toggle_light::before {
     content: "";
     background-color: white;
     top: 30%;
@@ -74,3 +78,8 @@
     transition: .3s;
     border: 1px solid white;
 } */
+
+
+
+
+}

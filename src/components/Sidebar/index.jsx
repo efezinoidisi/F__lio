@@ -13,17 +13,21 @@ const index = () => {
 				className={darkTheme ? styles.toggle : styles.toggle_light}
 			>
 				{darkTheme ? (
-					<BsFillSunFill style={{ color: "yellow" }} />
+					<BsFillSunFill className={styles.lightmode} />
 				) : (
-					<BsFillMoonFill style={{ color: "#110111" }} />
+					<BsFillMoonFill className={styles.darkmode} />
 				)}
 			</div>
 			<div className={styles.socials}>
 				<a href="/">
-					<FaGithub style={{ color: "red" }} />
+					<FaGithub
+						className={darkTheme ? styles.socials_d : styles.socials_l}
+					/>
 				</a>
 				<a href="/">
-					<FaTwitter style={{ color: "red" }} />
+					<FaTwitter
+						className={darkTheme ? styles.socials_d : styles.socials_l}
+					/>
 				</a>
 			</div>
 		</div>

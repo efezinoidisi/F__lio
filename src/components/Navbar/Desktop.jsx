@@ -1,20 +1,14 @@
 import styles from "./style.module.css";
-
+import { Link } from "react-router-dom";
 const Desktop = () => {
 	return (
-        <nav className={styles.nav_desktop}>
+		<nav className={styles.nav_desktop}>
 			<ul>
-				<li>
-					<a href="#about">About Me</a>
-				</li>
+				<Link to={"/"}> Home</Link>
+				<Link to={"/about"}> About Me</Link>
 
-				<li>
-					<a href="#projects">Projects</a>
-				</li>
-
-				<li>
-					<a href="#contact">Contact Me</a>
-				</li>
+				<Link to={"/projects"}> Projects</Link>
+				<Link to={"/contact"}> Contact Me</Link>
 			</ul>
 		</nav>
 	);
