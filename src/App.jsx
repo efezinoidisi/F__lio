@@ -7,7 +7,7 @@ import Contact from "./pages/Contact/Contact";
 import Hero from "./pages/Hero/Hero";
 import Navbar from "./components/Navbar";
 import Work from "./pages/Projects/Projects";
-import Footer from "./components/Footer/Index";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 	return (
