@@ -11,7 +11,7 @@ const index = () => {
 
 	return (
 		<div className={darkTheme?styles.container:styles.container_light}>
-			<h2 className={styles.heading}>My projects</h2>
+			<h2 className={styles.heading}>Projects</h2>
 			{projectsCard}
 		</div>
 	);
