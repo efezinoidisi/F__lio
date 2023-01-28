@@ -1,17 +1,15 @@
 import { Routes, Route, Outlet } from "react-router-dom";
-import Change from "./pages/home/index";
+import Change from "./pages/Home/index";
 import "./App.css";
 import { ThemeProvider } from "./context";
-import About from "./pages/about/About";
-import Contact from "./pages/contact/Contact";
-import Hero from "./pages/hero/Hero";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
+import Hero from "./pages/Hero/Hero";
 import Navbar from "./components/Navbar/Index";
-import Work from "./pages/projects/Projects";
+import Work from "./pages/Projects/Projects";
 import Footer from "./components/Footer/Index";
 
 function App() {
-
-
 	return (
 		<div className="App">
 			<ThemeProvider>
