@@ -17,33 +17,33 @@
 .container_light {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7)),
         url("../../assets/women-web-developer-with-laptop.png");
-        background-color: #fff;
+    background-color: #fff;
     width: 100%;
-        height: 100vh;
-        background-position: center;
-        color: #000;
-        display: flex;
-        background-repeat: no-repeat;
-        background-size: contain;
-        flex-direction: column;
-        padding: 30% 1rem 5rem;
-        justify-content: space-between;
-        position: relative;
+    height: 100vh;
+    background-position: center;
+    color: #000;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-direction: column;
+    padding: 30% 1rem 5rem;
+    justify-content: space-between;
+    position: relative;
 }
 
 
 
 .container_light::before {
     content: "";
-        background-color: inherit;
-        position: absolute;
-        top: 10%;
-        left: 0;
-        width: 100px;
-        height: 100px;
-        border-top: 0.5rem solid;
-        border-left: 0.5rem solid;
-        border-image: linear-gradient(45deg, black, purple, teal) 1;
+    background-color: inherit;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-top: 0.5rem solid;
+    border-left: 0.5rem solid;
+    border-image: linear-gradient(45deg, black, purple, teal) 1;
 }
 
 
@@ -99,7 +99,7 @@
 .content {
     width: 100%;
     padding: 0 1.3rem;
-    
+
 
 }
 
@@ -115,10 +115,10 @@
     line-height: 2;
     border-radius: 8px;
     animation-name: floating_mob;
-        animation-duration: 8s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        /* margin-left: 0;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* margin-left: 0;
         margin-top: 5px; */
 }
 
@@ -130,9 +130,9 @@
     line-height: 2;
     border-radius: 8px;
     animation-name: floating_mob;
-        animation-duration: 8s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .fav_quote::before,
@@ -149,13 +149,19 @@
 }
 
 
-.contact{
+.contact {
     background-color: inherit;
     border: 1px solid rgba(0, 255, 255, 0.7);
-        padding: 0.7rem;
-        color: rgba(0, 255, 255, 0.7);
-        border-radius: 10px;
-        font-size: 1rem;
+    padding: 0.7rem;
+    color: rgba(0, 255, 255, 0.7);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.contact:hover {
+    background-color: rgba(0, 255, 255, 0.7);
+    border: 1px solid inherit;
+    color: #fff;
 }
 
 .contact_light {
@@ -163,26 +169,26 @@
     border: none;
     background-color: rgba(128, 0, 128, 0.7);
     padding: 0.7rem;
-    color:#fff;
+    color: #fff;
     border-radius: 10px;
     font-size: 1rem;
 }
 
 @media screen and (min-width:600px) {
-    .container{
+    .container {
         padding-bottom: 15rem;
     }
-    
-                .container_light {
-                    padding-bottom: 15rem;
-                }
+
+    .container_light {
+        padding-bottom: 15rem;
+    }
 }
 
 @media screen and (min-width:900px) {
     .container {
         position: relative;
-        width: 83%;
-        margin-left: 17%;
+        width: 85%;
+        margin-left: 15%;
         height: 100vh;
         margin-top: 0;
         margin-bottom: 0;
@@ -272,19 +278,19 @@
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
         margin-left: 0;
-        margin-top: 5px; 
+        margin-top: 5px;
     }
-    
-        .fav_quote_light {
-            animation-name: floating;
-            animation-duration: 8s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            margin-left: 0;
-            margin-top: 5px;
-            background-color: rgba(0, 0, 0,0.6);
-            color: #fff;
-        }
+
+    .fav_quote_light {
+        animation-name: floating;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 0;
+        margin-top: 5px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+    }
 
 
 }
@@ -310,7 +316,7 @@
     50% {
         transform: translate(60px, 15px);
     }
-    
+
     75% {
         transform: translate(70px, 30px)
     }

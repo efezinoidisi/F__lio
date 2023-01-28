@@ -2,6 +2,9 @@ import { useState } from "react";
 import Input from "../../components/Input/Index";
 import styles from "./style.module.css";
 import { useTheme } from "../../context";
+import { CiLocationOn } from "react-icons/ci";
+import { FiPhoneCall } from "react-icons/fi";
+import { TfiEmail } from "react-icons/tfi";
 
 
 const index = () => {
@@ -45,7 +48,7 @@ const index = () => {
 	//action="https://getform.io/f/d557671d-44a1-425c-9c37-ff375d9768ef"
 	//method = "POST";
 	return (
-		<div className={darkTheme?styles.container:styles.container_light}>
+		<div className={darkTheme ? styles.container : styles.container_light}>
 			<h2>Contact me</h2>
 
 			<div className={styles.wrapper}>
@@ -72,15 +75,33 @@ const index = () => {
 
 				<div className={styles.aside}>
 					<p>
-						Do you have any questions or just want to chat, Kindly send
-						me a message and I would get back to you.
+						Do you have any questions or just want to chat, Kindly send me a
+						message and I would get back to you.
 					</p>
-					
-					
+
 					<div className={styles.details}>
-						<p>Location: Delta, Nigeria</p>
-						<p>Phone: 07086438574</p>
-						<p>email: efezinoeidisi@gmail.com</p>
+						<ul>
+							<li>
+								<CiLocationOn
+									className={darkTheme ? styles.icons : styles.icons_light}
+								/>{" "}
+								Delta state, Nigeria.
+							</li>
+
+							<li>
+								<FiPhoneCall
+									className={darkTheme ? styles.icons : styles.icons_light}
+								/>{" "}
+								08169209097
+							</li>
+
+							<li>
+								<TfiEmail
+									className={darkTheme ? styles.icons : styles.icons_light}
+								/>{" "}
+								efezinoeidisi@gmail.com
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>

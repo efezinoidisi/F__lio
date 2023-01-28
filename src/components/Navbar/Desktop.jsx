@@ -4,6 +4,7 @@ const Desktop = () => {
 	return (
 		<nav className={styles.nav_desktop}>
 			<ul>
+				<Link to={"/"}> Home</Link>
 				<Link to={"/about"}> About Me</Link>
 
 				<Link to={"/projects"}> Projects</Link>

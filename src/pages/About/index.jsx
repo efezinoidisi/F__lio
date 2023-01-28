@@ -25,7 +25,7 @@ const index = () => {
 			</p>
 
 			<p>
-				When I'm not learning about react, python or C , I spend my time
+				When I'm not coding or learning , I spend my time
 				listening to inspiring and soothing music, watching animes, k-dramas or
 				reading novels.
 			</p>
