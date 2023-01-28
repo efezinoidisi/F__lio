@@ -5,7 +5,7 @@ import { ThemeProvider } from "./context";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Hero from "./pages/Hero/Hero";
-import Navbar from "./components/Navbar/Index";
+import Navbar from "./components/Navbar";
 import Work from "./pages/Projects/Projects";
 import Footer from "./components/Footer/Index";
 
