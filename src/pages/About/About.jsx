@@ -20,12 +20,12 @@ const index = () => {
 
 			<p>
 				I'm constantly learning about new web technologies and always eager to
-				collaborate and work with other people. I am available to join a team
-				and contribute my skills to a given project.
+				collaborate or work in a team. I am available to join a team and
+				contribute my skills to a given project.
 			</p>
 
 			<p>
-				When I'm not coding or learning , I spend my time
+				When I'm not coding or improving my current skills , I spend my time
 				listening to inspiring and soothing music, watching animes, k-dramas or
 				reading novels.
 			</p>

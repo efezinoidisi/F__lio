@@ -19,12 +19,12 @@ const index = () => {
 				)}
 			</div>
 			<div className={styles.socials}>
-				<a href="/">
+				<a href="https://github.com/efezinoidisi">
 					<FaGithub
 						className={darkTheme ? styles.socials_d : styles.socials_l}
 					/>
 				</a>
-				<a href="/">
+				<a href="https://twitter.com/_zeeknow">
 					<FaTwitter
 						className={darkTheme ? styles.socials_d : styles.socials_l}
 					/>

@@ -16,7 +16,7 @@ const Navbar = () => {
 			</h2>
 			<Mobile showModal={showModal} setShowModal={setShowModal} />
 			<Desktop />
-			<Sidebar/>
+			<Sidebar />
 		</header>
 	);
 };
