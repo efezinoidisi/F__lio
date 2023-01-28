@@ -6,9 +6,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FiPhoneCall } from "react-icons/fi";
 import { TfiEmail } from "react-icons/tfi";
 
-
 const index = () => {
-	
 	const darkTheme = useTheme();
 	const [values, setValues] = useState({
 		fullname: "",
@@ -40,11 +38,9 @@ const index = () => {
 		}));
 	};
 
-	console.log(values);
 	const first_part = data.map((item) => (
 		<Input key={item.id} handleChange={handleChange} {...item} />
 	));
-
 
 	return (
 		<div className={darkTheme ? styles.container : styles.container_light}>
@@ -58,6 +54,11 @@ const index = () => {
 				>
 					{first_part}
 
+					<input
+						type="hidden"
+						name="_gotcha"
+						style={{ display: "none !important" }}
+					/>
 					<div>
 						<label htmlFor="message">Message</label>
 						<textarea
@@ -95,7 +96,7 @@ const index = () => {
 								<FiPhoneCall
 									className={darkTheme ? styles.icons : styles.icons_light}
 								/>{" "}
-								08169209097
+								+2348169209097
 							</li>
 
 							<li>

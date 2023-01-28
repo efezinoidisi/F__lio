@@ -1,9 +1,8 @@
-import metabnb from "../../assets/metabnb.png"
-import task1 from "../../assets/linktree-task.png"
+import metabnb from "../../assets/metabnb.png";
+import task1 from "../../assets/linktree-task.png";
 import sunny from "../../assets/sunny.png";
 
 import huddle from "../../assets/huddle.png";
-
 
 const projects = [
 	{
@@ -29,7 +28,7 @@ const projects = [
 		details: "Frontend mentor challenge ",
 		img: huddle,
 		github: "https://github.com/efezinoidisi/Huddle-page",
-		live: "https://applyforme.apphttps://efezinoidisi.github.io/Huddle-page/",
+		live: "https://efezinoidisi.github.io/Huddle-page/",
 	},
 	{
 		id: 4,
@@ -40,6 +39,5 @@ const projects = [
 		live: "https://efezinoidisi.github.io/sunnyside-agency-landing-page/",
 	},
 ];
-
 
 export default projects;

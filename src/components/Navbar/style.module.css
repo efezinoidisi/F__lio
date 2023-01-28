@@ -7,7 +7,7 @@
     height: 10%;
     padding: 0 1rem;
     position: fixed;
-    border-bottom: 1px solid rgba(0, 0, 0,0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     z-index: 5;
     width: 100%;
     top: 0;
@@ -67,7 +67,8 @@
 
 }
 
-.nav_mobile_links ul, .nav_mobile_links_light ul {
+.nav_mobile_links ul,
+.nav_mobile_links_light ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -121,7 +122,7 @@
 
 
 .container_light a {
-    color: #110111;
+    color: #000;
     text-decoration: none;
     transition: ease-out .2s;
     position: relative;
@@ -167,6 +168,10 @@
     margin-top: 6rem;
     display: flex;
     gap: 1rem;
+}
+
+.heading a {
+    color: #fff;
 }
 
 
@@ -220,6 +225,10 @@
         justify-content: space-between;
         height: 10rem;
         width: 100%;
+    }
+
+    .nav_desktop a {
+        color: #fff;
     }
 }
 
