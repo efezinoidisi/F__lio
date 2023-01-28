@@ -1,25 +1,16 @@
 import { Routes, Route, Outlet } from "react-router-dom";
-import Home from "./pages/Home"
+import Change from "./pages/home/index";
 import "./App.css";
 import { ThemeProvider } from "./context";
-import About from "./pages/About/Index";
-import Contact from "./pages/Contact/Index";
-import Hero from "./pages/Hero/Index";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
+import Hero from "./pages/hero/Hero";
 import Navbar from "./components/Navbar/Index";
-import Work from "./pages/Projects/Index";
-import Footer from "./components/Footer/Index"
-
-	
+import Work from "./pages/projects/Projects";
+import Footer from "./components/Footer/Index";
 
 function App() {
-	// const [location, setLocation] = useState();
 
-	// useEffect(() => {
-	// 	fetch("http://ip-api.com/json/?fields=61439")
-	// 		.then((res) => res.json())
-	// 		.then((data) => setLocation(data?.country));
-	// }, []);
-	// console.log(location);
 
 	return (
 		<div className="App">
@@ -32,8 +23,8 @@ function App() {
 					<Route path="/projects" element={<Work />} />
 					<Route path="*" element={<Error />} />
 				</Routes>
-				<Home />
-				<Footer/>
+				<Change />
+				<Footer />
 			</ThemeProvider>
 		</div>
 	);
