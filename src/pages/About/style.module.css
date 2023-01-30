@@ -33,7 +33,7 @@
 .container_light::before {
     content: "";
     position: absolute;
-    top: 10vh;
+    top: 10%;
     left: 0;
     width: 100px;
     height: 100px;
@@ -58,7 +58,7 @@
 .container::before {
     content: "";
     position: fixed;
-    top: 10vh;
+    top: 10%;
     left: 0;
     width: 100px;
     height: 100px;
@@ -119,7 +119,7 @@
     }
 
     .container::before {
-        top: 10%;
+        top: 15%;
     }
 
     .container_light {
@@ -137,8 +137,8 @@
 @media screen and (min-width:900px) {
     .container {
         position: relative;
-        width: 85%;
-        margin-left: 15%;
+        width: 90%;
+        margin-left: 10%;
         height: 100vh;
         margin-top: 0;
         margin-bottom: 0;
@@ -152,7 +152,7 @@
 
     .container::before {
         top: 0;
-        left: 15%;
+        left: 10%;
         width: 100px;
         height: 100px;
         border-top: 0.5rem solid;
@@ -173,8 +173,8 @@
 
     .container_light {
         position: relative;
-        width: 85%;
-        margin-left: 15%;
+        width: 90%;
+        margin-left: 10%;
         height: 100vh;
         margin-top: 0;
         margin-bottom: 0;
@@ -209,3 +209,4 @@
     }
 
 }
+

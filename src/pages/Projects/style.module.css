@@ -109,8 +109,8 @@
 @media screen and (min-width:900px) {
     .container {
         position: relative;
-        width: 85%;
-        margin-left: 15%;
+        width: 90%;
+        margin-left: 10%;
         height: 100%;
         margin-top: 0;
         margin-bottom: 0;
@@ -124,8 +124,8 @@
 
     .container_light {
         position: relative;
-        width: 85%;
-        margin-left: 15%;
+        width: 90%;
+        margin-left: 10%;
         height: max-content;
         margin-top: 0;
         margin-bottom: 0;
@@ -140,7 +140,7 @@
 
     .container::before {
         top: 0;
-        left: 15%;
+        left: 10%;
         width: 100px;
         height: 100px;
         border-top: 0.5rem solid;
@@ -148,6 +148,16 @@
         border-image: linear-gradient(45deg, teal, orange) 1;
     }
 
+    
+        .container_light::before {
+            top: 0;
+            left: 10%;
+            width: 100px;
+            height: 100px;
+            border-top: 0.5rem solid;
+            border-left: 0.5rem solid;
+            border-image: linear-gradient(45deg, teal, orange) 1;
+        }
     .container .heading,
     .container_light .heading {
         margin-bottom: 3rem;

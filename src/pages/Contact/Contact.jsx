@@ -65,7 +65,7 @@ const index = () => {
 							name="message"
 							id="message"
 							cols="30"
-							rows="10"
+							rows="8"
 							value={values.message}
 							onChange={handleChange}
 							placeholder={"Hello, I would love to ..."}
