@@ -103,14 +103,29 @@
 @media screen and (min-width:600px) {
     .container {
         height: max-content;
+        padding: 20% 2rem 2rem;
+    }
+
+    .container::before {
+        top: 13%;
+    }
+
+
+    .container_light {
+        height: max-content;
+        padding: 20% 2rem 2rem;
+    }
+
+    .container_light::before {
+        top: 13%;
     }
 }
 
 @media screen and (min-width:900px) {
     .container {
         position: relative;
-        width: 85%;
-        margin-left: 15%;
+        width: 88%;
+        margin-left: 12%;
         height: 100%;
         margin-top: 0;
         margin-bottom: 0;
@@ -124,8 +139,8 @@
 
     .container_light {
         position: relative;
-        width: 85%;
-        margin-left: 15%;
+        width: 88%;
+        margin-left: 12%;
         height: max-content;
         margin-top: 0;
         margin-bottom: 0;
@@ -140,7 +155,18 @@
 
     .container::before {
         top: 0;
-        left: 15%;
+        left: 12%;
+        width: 100px;
+        height: 100px;
+        border-top: 0.5rem solid;
+        border-left: 0.5rem solid;
+        border-image: linear-gradient(45deg, teal, orange) 1;
+    }
+
+
+    .container_light::before {
+        top: 0;
+        left: 12%;
         width: 100px;
         height: 100px;
         border-top: 0.5rem solid;

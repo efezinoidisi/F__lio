@@ -11,6 +11,8 @@
 }
 
 body {
-  background-color: purple;
+  background-color: #a310a3;
   position: relative;
+  height: 100%;
+  width: 100%;
 }

@@ -13,22 +13,26 @@ const index = () => {
 			<h2 className={styles.heading}>About Me</h2>
 
 			<p>
-				I'm Efezino Idisi, a junior frontend developer who has always been
+				I'm Efezino Idisi, a computer science graduate who has always been
 				passionate about developing amazing, responsive and user friendly web
 				applications that solve challenges for the people using them.
 			</p>
 
 			<p>
-				I'm constantly learning about new web technologies and always eager to
-				collaborate or work in a team. I am available to join a team and
-				contribute my skills to a given project.
+				I'm currently enrolled in ALX software engineering program and looking
+				for any opportunity to contribute my skills to any given project.
 			</p>
 
 			<p>
-				When I'm not coding or improving my current skills , I spend my time
-				listening to inspiring and soothing music, watching animes, k-dramas or
-				reading novels.
+				When I'm not working I spend my time listening to music, watching
+				k-dramas or reading novels.
 			</p>
+
+			<div className={darkTheme ? styles.resume : styles.resume_light}>
+				<a href="/" download>
+					Download Resume
+				</a>
+			</div>
 		</div>
 	);
 };
