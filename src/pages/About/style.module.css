@@ -161,6 +161,7 @@
         height: 100vh;
         padding: 0 2rem 0;
         margin-bottom: 0;
+        justify-content: flex-start;
     }
 
     .container::before {
@@ -201,7 +202,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         padding: 0 3rem;
     }
 
@@ -236,7 +237,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         padding: 0 3rem;
     }
 
@@ -265,9 +266,15 @@
 
     .resume {
         align-self: flex-start;
+        width: 20%;
     }
 
     .resume_light {
         align-self: flex-start;
+        width: 20%;
+    }
+
+    .heading {
+        align-self: center;
     }
 }
