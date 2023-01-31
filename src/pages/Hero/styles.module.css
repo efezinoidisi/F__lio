@@ -151,16 +151,18 @@
 
 .contact {
     background-color: inherit;
-    border: 1px solid rgba(0, 255, 255, 0.7);
+    border: 2px solid rgba(0, 255, 255, 0.7);
     padding: 0.7rem;
     color: rgba(0, 255, 255, 0.7);
     border-radius: 10px;
     font-size: 1rem;
+    cursor: pointer;
+    transition: .3s ease-out;
 }
 
 .contact:hover {
     background-color: rgba(0, 255, 255, 0.7);
-    border: 1px solid inherit;
+    border: 2px solid inherit;
     color: #fff;
 }
 
@@ -172,39 +174,88 @@
     color: #fff;
     border-radius: 10px;
     font-size: 1rem;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+
+.contact_light:hover {
+    border: 1px solid rgb(141, 7, 7);
+    background-color: rgb(48, 8, 48);
+    color: #fff;
+}
+
+.skills_content {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 0;
 }
 
 @media screen and (min-width:600px) {
     .container {
-        padding-bottom: 15rem;
+        padding: 15% 1rem 6.5rem;
     }
 
     .container_light {
-        padding-bottom: 15rem;
+        padding: 15% 1rem 6.5rem;
+    }
+
+    .container::before {
+        top: 13%;
+    }
+
+    .container_light::before {
+        top: 13%;
+    }
+    
+    .content{
+        width: 70%;
+    }
+    
+    
+    .fav_quote{
+        width: 60%;
+    }
+    
+    .fav_quote_light{
+        width: 60%;
     }
 }
 
 @media screen and (min-width:900px) {
     .container {
         position: relative;
-        width: 90%;
-        margin-left: 10%;
+        width: 88%;
+        margin-left: 12%;
         height: 100vh;
         margin-top: 0;
         margin-bottom: 0;
         border: 1px solid black;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        padding: 0 9rem;
+        padding: 2rem;
+        gap: 8rem;
+    }
+
+    .container_light {
+        position: relative;
+        width: 88%;
+        margin-left: 12%;
+        height: 100vh;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
         gap: 8rem;
     }
 
     .container::before {
 
         top: 0;
-        left: 10%;
+        left: 12%;
         width: 100px;
         height: 100px;
         border-top: 0.5rem solid;
@@ -224,27 +275,13 @@
         border-image: linear-gradient(45deg, teal, orange) 1;
     }
 
-    .container_light {
-        position: relative;
-        width: 90%;
-        margin-left: 10%;
-        height: 100vh;
-        margin-top: 0;
-        margin-bottom: 0;
-        border: 1px solid #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 9rem;
-        gap: 8rem;
-    }
+
 
 
     .container_light::before {
 
         top: 0;
-        left: 10%;
+        left: 12%;
         width: 100px;
         height: 100px;
         border-top: 0.5rem solid;
@@ -271,8 +308,10 @@
         animation-duration: 8s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
-        margin-left: 0;
-        margin-top: 5px;
+
+        margin: 0;
+        padding: 1rem;
+        align-self: flex-start;
     }
 
     .fav_quote_light {
@@ -280,16 +319,21 @@
         animation-duration: 8s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
-        margin-left: 0;
-        margin-top: 5px;
+        margin: 0;
+        padding: 1rem;
+        align-self: flex-start;
 
     }
 
+    .content {
+        width: 50%;
+        align-self: flex-start;
+    }
 
 }
 
 
-@media screen and (min-width:1200px) {
+/* @media screen and (min-width:1200px) {
     .container {
         width: 85%;
         margin-left: 15%;
@@ -299,7 +343,7 @@
         width: 85%;
         margin-left: 15%;
     }
-}
+} */
 
 @keyframes floating {
     0% {
@@ -307,11 +351,11 @@
     }
 
     50% {
-        transform: translate(60px, 15px);
+        transform: translate(0, -10px);
     }
 
     75% {
-        transform: translate(70px, 30px)
+        transform: translate(0, -15px)
     }
 
     100% {

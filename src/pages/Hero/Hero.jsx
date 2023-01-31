@@ -1,6 +1,13 @@
 import styles from "./styles.module.css";
 import { useTheme } from "../../context";
-import { FaGithub, FaTwitter } from "react-icons/fa";
+import {
+	FaGithub,
+	FaTwitter,
+	FaPython,
+	FaReact,
+	FaGitSquare,
+} from "react-icons/fa";
+import { SiJavascript, SiGithub, SiCss3, SiHtml5 } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 
 const index = () => {
@@ -18,7 +25,21 @@ const index = () => {
 					a junior frontend developer with a passion for bringing amazing
 					designs to life
 				</p>
-				<button type="button" onClick={() => navigate("/contact")} className={darkTheme?styles.contact:styles.contact_light}>
+
+				<div className={styles.skills_content}>
+					<SiHtml5 />
+					<SiCss3 />
+					<SiJavascript />
+					<FaReact />
+					<FaGitSquare />
+					<FaGithub />
+					<FaPython />
+				</div>
+				<button
+					type="button"
+					onClick={() => navigate("/contact")}
+					className={darkTheme ? styles.contact : styles.contact_light}
+				>
 					Contact Me!
 				</button>
 			</div>
