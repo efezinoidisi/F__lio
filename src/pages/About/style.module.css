@@ -11,7 +11,6 @@
     flex-direction: column;
     padding: 30% 2rem 5rem;
     justify-content: center;
-
 }
 
 .container_light {
@@ -32,7 +31,7 @@
 
 .container_light::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 10%;
     left: 0;
     width: 100px;
@@ -45,7 +44,7 @@
 
 .container_light::after {
     content: "";
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     width: 100px;
@@ -123,9 +122,9 @@
     text-align: center;
 }
 
-.resume a{
+.resume a {
     color: rgba(0, 255, 255, 0.7);
-    
+
 }
 
 .resume:hover {
@@ -148,11 +147,11 @@
     text-align: center;
 }
 
-.resume_light a{
+.resume_light a {
     color: #fff;
 }
 
-.resume_light:hover{
+.resume_light:hover {
     border: 1px solid rgb(141, 7, 7);
     background-color: rgb(48, 8, 48)
 }
@@ -178,16 +177,16 @@
     .container_light::before {
         top: 13%;
     }
-    
-    .resume{
+
+    .resume {
         width: 40%;
-        
+
     }
-    
-    .resume_light{
+
+    .resume_light {
         width: 40%;
     }
-    
+
 }
 
 @media screen and (min-width:900px) {
@@ -261,14 +260,14 @@
         height: 100px;
         border-bottom: 0.5rem solid;
         border-right: 0.5rem solid;
-        border-image: linear-gradient(45deg, teal, blue,purple) 1;
+        border-image: linear-gradient(45deg, teal, blue, purple) 1;
     }
 
-    .resume{
+    .resume {
         align-self: flex-start;
     }
-    
-    .resume_light{
+
+    .resume_light {
         align-self: flex-start;
     }
 }
