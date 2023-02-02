@@ -269,11 +269,12 @@
         height: 100%;
         padding: 17% 2rem 3rem;
     }
-    
-    .container::before{
+
+    .container::before {
         top: 13%;
     }
-    .container_light::before{
+
+    .container_light::before {
         top: 13%;
     }
 }
@@ -310,8 +311,7 @@
 
     .container::after {
         content: "";
-        background-color: inherit;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         right: 0;
         width: 100px;
@@ -351,8 +351,7 @@
 
     .container_light::after {
         content: "";
-        background-color: inherit;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         right: 0;
         width: 100px;
@@ -387,5 +386,3 @@
         padding: 0.5rem 0;
     }
 }
-
-

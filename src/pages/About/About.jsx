@@ -15,12 +15,13 @@ const index = () => {
 			<p>
 				I'm Efezino Idisi, a computer science graduate who has always been
 				passionate about developing amazing, responsive and user friendly web
-				applications that solve challenges for the people using them.
+				applications.
 			</p>
 
 			<p>
 				I'm currently enrolled in ALX software engineering program and looking
-				for any opportunity to contribute my skills to any given project.
+				for any opportunity to contribute my skills to any given project. I
+				would also like to add that am a hng cohort 9 finalist.
 			</p>
 
 			<p>
